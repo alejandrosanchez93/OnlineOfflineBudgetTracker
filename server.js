@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb://localhost/budgetTracker", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
@@ -28,8 +28,8 @@ app.listen(PORT, () => {
 });
 
 
-db.newdatabase.insert({
-  "name2": "this is name2",
-  "title": ["item 1", "item2", "item3"],
-  "country": "this is country"
-})
+// db.newdatabase.insert({
+//   "name2": "this is name2",
+//   "title": ["item 1", "item2", "item3"],
+//   "country": "this is country"
+// })
