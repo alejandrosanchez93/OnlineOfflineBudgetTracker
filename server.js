@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budgetTracker", {
+mongoose.connect("mongodb://localhost/tracker", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
